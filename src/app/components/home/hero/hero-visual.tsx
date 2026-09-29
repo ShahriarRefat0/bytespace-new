@@ -1,8 +1,9 @@
 import Image from "next/image";
-
 import { HeroCourseCard } from "./hero-course-card";
 import { HeroProgressCard } from "./hero-progress-card";
 import { HeroStudentsCard } from "./hero-students-card";
+
+
 
 export function HeroVisual() {
     return (
