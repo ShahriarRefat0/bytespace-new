@@ -11,18 +11,18 @@ const navLinks = [
 export function Navbar() {
   return (
     <header className="relative z-50 w-full">
-      <div className="mx-auto flex h-24 max-w-[1240px] items-center justify-between px-6">
-        
+      <div className="flex h-20 w-full items-center justify-between px-6 sm:px-10 md:px-12 lg:px-16">
         {/* Logo */}
-        <Logo />
+        <Logo textClassName="text-xl sm:text-2xl" />
 
         {/* Navigation */}
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-8 md:flex lg:gap-10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-base text-white/80 transition-colors hover:text-white"
+              className={`text-sm font-medium transition-colors hover:text-white ${link.label === "Home" ? "text-white" : "text-white/80"
+                }`}
             >
               {link.label}
             </Link>
@@ -30,17 +30,17 @@ export function Navbar() {
         </nav>
 
         {/* Actions */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="flex items-center gap-6 md:gap-7">
           <Link
             href="/login"
-            className="text-base text-white/80 transition-colors hover:text-white"
+            className="text-sm font-medium text-white/80 transition-colors hover:text-white"
           >
             Sign In
           </Link>
 
           <Link
             href="/register"
-            className="text-base text-white/80 transition-colors hover:text-white"
+            className="text-sm font-medium text-white/80 transition-colors hover:text-white"
           >
             Join Us
           </Link>
@@ -50,7 +50,7 @@ export function Navbar() {
             aria-label="Shopping bag"
             className="text-white/90 transition-colors hover:text-white"
           >
-            <ShoppingBag size={24} strokeWidth={1.8} />
+            <ShoppingBag size={21} strokeWidth={1.8} />
           </Link>
         </div>
       </div>

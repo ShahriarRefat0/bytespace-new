@@ -35,7 +35,7 @@ export function Logo({
 
       {showText && (
         <span
-          className={`text-2xl font-bold leading-none tracking-tight ${textClassName}`}
+          className={`text-2xl font-bold leading-none tracking-tight text-white ${textClassName}`}
         >
           ByteSpace
         </span>

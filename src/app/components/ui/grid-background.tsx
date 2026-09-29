@@ -11,7 +11,7 @@ export function GridBackground({
 }: GridBackgroundProps) {
   return (
     <div
-      className={`relative min-h-screen overflow-hidden bg-[#123FE5] ${className}`}
+      className={`relative min-h-screen overflow-hidden bg-[#0738E8] ${className}`}
     >
       <div
         aria-hidden="true"
@@ -20,16 +20,16 @@ export function GridBackground({
           backgroundImage: `
             linear-gradient(
               to right,
-              rgba(255, 255, 255, 0.08) 1px,
+              rgba(255, 255, 255, 0.13) 1px,
               transparent 1px
             ),
             linear-gradient(
               to bottom,
-              rgba(255, 255, 255, 0.08) 1px,
+              rgba(255, 255, 255, 0.13) 1px,
               transparent 1px
             )
           `,
-          backgroundSize: "120px 120px",
+          backgroundSize: "110px 110px",
         }}
       />
 
