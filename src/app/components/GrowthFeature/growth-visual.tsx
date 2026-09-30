@@ -25,7 +25,7 @@ export function GrowthVisual() {
 
       {/* Yellow decoration */}
       <Image
-        src="/images/home/growth/yellow-squiggle.png"
+        src="/images/home/growth/yellow-squiggle-left.png"
         alt=""
         width={110}
         height={160}

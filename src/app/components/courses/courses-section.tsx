@@ -1,78 +1,21 @@
-import { CourseCard } from "./course-card";
+"use client";
+
+import { useState, useMemo } from "react";
 import { CourseCategoryFilter } from "./course-category-filter";
-
-const studentAvatars = [
-  "/images/home/hero/student-1.png",
-  "/images/home/hero/student-2.png",
-  "/images/home/hero/student-3.png",
-  "/images/home/hero/student-4.png",
-  "/images/home/hero/student-5.png",
-];
-
-const courses = [
-  {
-    image: "/images/home/courses/course-1.png",
-    title: "Learn Figma from Basic",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-2.png",
-    title: "Build Digital Asset",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-3.png",
-    title: "the Power of Big Data",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-4.png",
-    title: "Balancing Productivity and Focus",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-5.png",
-    title: "Mastering Money Management",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-6.png",
-    title: "From Idea to Startup Success",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-];
+import { CourseGrid } from "./course-grid";
+import { courses } from "@/data/courses";
 
 export function CoursesSection() {
+  const [activeCategory, setActiveCategory] = useState("Featured");
+
+  const displayedCourses = useMemo(() => {
+    if (activeCategory === "Featured") {
+      return courses;
+    }
+    const filtered = courses.filter((c) => c.category === activeCategory);
+    return filtered.length > 0 ? filtered : courses;
+  }, [activeCategory]);
+
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-[1240px] px-6">
@@ -92,16 +35,15 @@ export function CoursesSection() {
           </p>
         </div>
 
-<CourseCategoryFilter/>
+        {/* Categories */}
+        <CourseCategoryFilter
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+        />
 
-        {/* Course Grid */}
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((course) => (
-            <CourseCard
-              key={course.title}
-              {...course}
-            />
-          ))}
+        {/* 6 Courses */}
+        <div className="mt-12">
+          <CourseGrid courses={displayedCourses} limit={6} />
         </div>
       </div>
     </section>
