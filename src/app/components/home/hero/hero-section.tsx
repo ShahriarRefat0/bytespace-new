@@ -2,10 +2,11 @@ import { HeroSearch } from "./hero-search";
 import { HeroVisual } from "./hero-visual";
 
 
+
 export function HeroSection() {
     return (
         <section className="relative w-full overflow-hidden">
-            <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 pt-10 sm:pt-14">
+            <div className="w-full">
                 {/* Hero Heading */}
                 <div className="relative z-20 mx-auto max-w-[1000px] text-center">
                     <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[76px]">

@@ -10,7 +10,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <header className="relative z-50 w-full">
+    <header className="relative z-50 max-w-[1680] mx-auto">
       <div className="flex h-20 w-full items-center justify-between px-6 sm:px-10 md:px-12 lg:px-16">
         {/* Logo */}
         <Logo textClassName="text-xl sm:text-2xl" />
