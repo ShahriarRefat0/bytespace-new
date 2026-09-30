@@ -3,15 +3,17 @@ import type { ReactNode } from "react";
 interface GridBackgroundProps {
   children: ReactNode;
   className?: string;
+  minHeight?: string;
 }
 
 export function GridBackground({
   children,
   className = "",
+  minHeight = "min-h-screen",
 }: GridBackgroundProps) {
   return (
     <div
-      className={`relative min-h-screen overflow-hidden bg-[#0738E8] ${className}`}
+      className={`relative overflow-hidden bg-[#0738E8] ${minHeight} ${className}`}
     >
       <div
         aria-hidden="true"
