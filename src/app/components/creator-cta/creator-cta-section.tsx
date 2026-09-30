@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CreatorCtaDecorations } from "./reator-cta-decorations";
+import { CreatorCtaDecorations } from "./creator-cta-decorations";
 import { GridBackground } from "../ui/grid-background";
 
 

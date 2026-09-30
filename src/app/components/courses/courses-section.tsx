@@ -1,76 +1,8 @@
-import { CourseCard } from "./course-card";
 import { CourseCategoryFilter } from "./course-category-filter";
+import { CourseGrid } from "./course-grid";
 
-const studentAvatars = [
-  "/images/home/hero/student-1.png",
-  "/images/home/hero/student-2.png",
-  "/images/home/hero/student-3.png",
-  "/images/home/hero/student-4.png",
-  "/images/home/hero/student-5.png",
-];
 
-const courses = [
-  {
-    image: "/images/home/courses/course-1.png",
-    title: "Learn Figma from Basic",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-2.png",
-    title: "Build Digital Asset",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-3.png",
-    title: "the Power of Big Data",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-4.png",
-    title: "Balancing Productivity and Focus",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-5.png",
-    title: "Mastering Money Management",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-  {
-    image: "/images/home/courses/course-6.png",
-    title: "From Idea to Startup Success",
-    instructor: "purepearl studio",
-    rating: 4.5,
-    level: "Beginner",
-    price: 25,
-    students: studentAvatars,
-    studentCount: "26+",
-  },
-];
+
 
 export function CoursesSection() {
   return (
@@ -95,13 +27,9 @@ export function CoursesSection() {
 <CourseCategoryFilter/>
 
         {/* Course Grid */}
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((course) => (
-            <CourseCard
-              key={course.title}
-              {...course}
-            />
-          ))}
+        <div className="mt-12">
+
+          <CourseGrid />
         </div>
       </div>
     </section>
