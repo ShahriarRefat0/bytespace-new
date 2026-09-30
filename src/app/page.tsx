@@ -8,6 +8,8 @@ import { CoursesSection } from "./components/home/courses/courses-section";
 import { LearningPathsSection } from "./components/home/learning-paths/learning-paths-section";
 import { GrowthSection } from "./components/home/GrowthFeature/growth-section";
 import { CreatorCtaSection } from "./components/home/creator-cta/creator-cta-section";
+import { CommunityTestimonials } from "./components/home/testimonial/community-testimonials";
+import { Footer } from "./components/layout/footer";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
          <LearningPathsSection />
          <GrowthSection />
          <CreatorCtaSection/>
+         <CommunityTestimonials />
+         <Footer/>
       </main>
     </div>
   );
