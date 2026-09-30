@@ -13,9 +13,9 @@ import { Footer } from "./components/layout/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-white">
+    <div className="min-h-screen w-full overflow-x-hidden bg-white">
       {/* Hero Area */}
-      <GridBackground>
+      <GridBackground minHeight="min-h-0">
         <Navbar />
         <HeroSection />
       </GridBackground>

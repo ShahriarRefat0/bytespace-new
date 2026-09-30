@@ -5,10 +5,9 @@ import { GrowthVisual } from "./growth-visual";
 export function GrowthSection() {
   return (
     <section className="overflow-hidden bg-white">
+      
       <div className="mx-auto max-w-[1240px] px-6">
-        {/* ========================================
-            FEATURE 01
-        ======================================== */}
+        {/* FEATURE 01*/}
         <GrowthFeature
           title={
             <>
@@ -35,9 +34,7 @@ export function GrowthSection() {
           ]}
         />
 
-        {/* ========================================
-            FEATURE 02
-        ======================================== */}
+        {/* FEATURE 02 */}
         <GrowthFeature
           reverse
           title={

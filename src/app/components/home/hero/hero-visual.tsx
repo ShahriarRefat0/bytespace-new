@@ -11,7 +11,7 @@ export function HeroVisual() {
             {/* Lime Arch Background */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute bottom-0 left-1/2 z-10 w-[860px] -translate-x-1/2 select-none md:w-[1040px] lg:w-[1220px]"
+                className="pointer-events-none absolute bottom-0 left-1/2 z-10 w-[540px] -translate-x-1/2 select-none sm:w-[760px] md:w-[1020px] lg:w-[1220px]"
             >
                 <Image
                     src="/images/home/hero/sub-bg.png"
@@ -19,7 +19,7 @@ export function HeroVisual() {
                     width={1149}
                     height={442}
                     priority
-                    className="h-auto w-full object-contain"
+                    className="block h-auto w-full object-contain"
                 />
             </div>
 
@@ -112,14 +112,14 @@ export function HeroVisual() {
             </div>
 
             {/* Center Main Person */}
-            <div className="pointer-events-none absolute bottom-0 left-1/2 z-20 w-[420px] -translate-x-1/2 select-none sm:w-[480px] md:w-[540px] lg:w-[590px]">
+            <div className="pointer-events-none absolute bottom-0 left-1/2 z-20 w-[360px] -translate-x-1/2 select-none sm:w-[460px] md:w-[540px] lg:w-[620px] xl:w-[660px]">
                 <Image
                     src="/images/home/hero/hero-person.png"
                     alt="Student learning online"
                     width={722}
                     height={515}
                     priority
-                    className="h-auto w-full object-contain"
+                    className="block h-auto w-full object-contain"
                 />
             </div>
 

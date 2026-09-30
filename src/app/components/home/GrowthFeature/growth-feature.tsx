@@ -29,6 +29,7 @@ export function GrowthFeature({
         reverse ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
+      
       {/* Content */}
       <div>
         <h2 className="text-4xl font-bold leading-[1.08] tracking-tight text-[#111827] md:text-5xl">
