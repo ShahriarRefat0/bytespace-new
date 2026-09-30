@@ -20,7 +20,7 @@ export default function CoursesPage() {
 
   const [sortBy, setSortBy] = useState("Most relevant");
 
-  const pageSize = 12;
+  const pageSize = 15;
 
   /**
    * Filter + Sort Courses
