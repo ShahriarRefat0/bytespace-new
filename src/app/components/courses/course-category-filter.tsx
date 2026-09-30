@@ -23,19 +23,36 @@ const categories = [
   "Cooking",
 ];
 
-export function CourseCategoryFilter() {
-  const [activeCategory, setActiveCategory] = useState("Featured");
+interface CourseCategoryFilterProps {
+  activeCategory?: string;
+  onCategoryChange?: (category: string) => void;
+}
+
+export function CourseCategoryFilter({
+  activeCategory,
+  onCategoryChange,
+}: CourseCategoryFilterProps = {}) {
+  const [internalCategory, setInternalCategory] = useState("Featured");
+  const currentCategory = activeCategory ?? internalCategory;
+
+  const handleSelect = (category: string) => {
+    if (onCategoryChange) {
+      onCategoryChange(category);
+    } else {
+      setInternalCategory(category);
+    }
+  };
 
   return (
     <div className="mx-auto mt-12 flex max-w-[1100px] flex-wrap items-center justify-center gap-3">
       {categories.map((category) => {
-        const isActive = activeCategory === category;
+        const isActive = currentCategory === category;
 
         return (
           <button
             key={category}
             type="button"
-            onClick={() => setActiveCategory(category)}
+            onClick={() => handleSelect(category)}
             className={`
               rounded-full
               px-5

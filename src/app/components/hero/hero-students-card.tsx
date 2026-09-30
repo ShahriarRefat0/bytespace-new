@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const students = [
-  "/images/home/hero/student-1.png",
-  "/images/home/hero/student-2.png",
-  "/images/home/hero/student-3.png",
-  "/images/home/hero/student-4.png",
-  "/images/home/hero/student-5.png",
+  "/images/students/student-1.png",
+  "/images/students/student-2.png",
+  "/images/students/student-3.png",
+  "/images/students/student-4.png",
+  "/images/students/student-5.png",
 ];
 
 export function HeroStudentsCard() {

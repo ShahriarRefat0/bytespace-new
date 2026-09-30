@@ -1,17 +1,33 @@
-import { courses } from "@/data/courses";
 import { CourseCard } from "./course-card";
+import { courses as defaultCourses, type Course } from "@/data/courses";
 
 interface CourseGridProps {
+  courses?: Course[];
   currentPage?: number;
   pageSize?: number;
+  limit?: number;
 }
 
-export function CourseGrid({ currentPage = 1, pageSize = 12 }: CourseGridProps) {
-  const startIndex = (currentPage - 1) * pageSize;
-  const displayedCourses = courses.slice(startIndex, startIndex + pageSize);
+export function CourseGrid({
+  courses = defaultCourses,
+  currentPage = 1,
+  pageSize = 12,
+  limit,
+}: CourseGridProps) {
+  const courseList = courses ?? defaultCourses;
+
+  const displayedCourses = limit
+    ? courseList.slice(0, limit)
+    : courseList.slice(
+        (currentPage - 1) * pageSize,
+        currentPage * pageSize,
+      );
 
   return (
-    <div id="course-grid-top" className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div
+      id="course-grid-top"
+      className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+    >
       {displayedCourses.map((course) => (
         <CourseCard
           key={course.id}

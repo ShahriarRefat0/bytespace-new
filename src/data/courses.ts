@@ -8,6 +8,7 @@ export interface Course {
   price: number;
   students: string[];
   studentCount: string;
+  category: string;
 }
 
 export const courses: Course[] = [
@@ -19,12 +20,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Crafts",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "26+"
   },
@@ -36,12 +38,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "26+"
   },
@@ -53,12 +56,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "26+"
   },
@@ -70,12 +74,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "26+"
   },
@@ -87,12 +92,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "26+"
   },
@@ -104,12 +110,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 25,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "26+"
   },
@@ -121,12 +128,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 49,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -138,12 +146,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 55,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -155,12 +164,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 65,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -172,12 +182,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 75,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "26+"
   },
@@ -189,12 +200,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 19,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "45+"
   },
@@ -206,12 +218,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 25,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "68+"
   },
@@ -223,12 +236,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 29,
+    "category": "Cooking",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "84+"
   },
@@ -240,12 +254,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 35,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "120+"
   },
@@ -257,12 +272,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 39,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "240+"
   },
@@ -274,12 +290,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 45,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -291,12 +308,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 49,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -308,12 +326,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 55,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -325,12 +344,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 65,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "26+"
   },
@@ -342,12 +362,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 75,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "45+"
   },
@@ -359,12 +380,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 19,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "68+"
   },
@@ -376,12 +398,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 25,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "84+"
   },
@@ -393,12 +416,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 29,
+    "category": "Cooking",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "120+"
   },
@@ -410,12 +434,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 35,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "240+"
   },
@@ -427,12 +452,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 39,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -444,12 +470,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 45,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -461,12 +488,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 49,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -478,12 +506,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 55,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "26+"
   },
@@ -495,12 +524,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 65,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "45+"
   },
@@ -512,12 +542,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 75,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "68+"
   },
@@ -529,12 +560,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 19,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "84+"
   },
@@ -546,12 +578,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 25,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "120+"
   },
@@ -563,12 +596,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 29,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "240+"
   },
@@ -580,12 +614,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 35,
+    "category": "Crafts",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "480+"
   },
@@ -597,12 +632,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 39,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -614,12 +650,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 45,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -631,12 +668,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 49,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "26+"
   },
@@ -648,12 +686,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 55,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "45+"
   },
@@ -665,12 +704,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 65,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "68+"
   },
@@ -682,12 +722,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 75,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "84+"
   },
@@ -699,12 +740,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 19,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "120+"
   },
@@ -716,12 +758,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 25,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "240+"
   },
@@ -733,12 +776,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 29,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "480+"
   },
@@ -750,12 +794,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 35,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -767,12 +812,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 39,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -784,12 +830,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 45,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "26+"
   },
@@ -801,12 +848,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 49,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "45+"
   },
@@ -818,12 +866,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 55,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "68+"
   },
@@ -835,12 +884,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 65,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "84+"
   },
@@ -852,12 +902,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 75,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "120+"
   },
@@ -869,12 +920,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 19,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "240+"
   },
@@ -886,12 +938,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 25,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "480+"
   },
@@ -903,12 +956,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 29,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -920,12 +974,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 35,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -937,12 +992,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 39,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "26+"
   },
@@ -954,12 +1010,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 45,
+    "category": "Social Media",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "45+"
   },
@@ -971,12 +1028,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 49,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "68+"
   },
@@ -988,12 +1046,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 55,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "84+"
   },
@@ -1005,12 +1064,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 65,
+    "category": "Cooking",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "120+"
   },
@@ -1022,12 +1082,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 75,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "240+"
   },
@@ -1039,12 +1100,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 19,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "480+"
   },
@@ -1056,12 +1118,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 25,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -1073,12 +1136,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 29,
+    "category": "Freelance & Entrepreneurship",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -1090,12 +1154,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 35,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "26+"
   },
@@ -1107,12 +1172,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 39,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "45+"
   },
@@ -1124,12 +1190,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 45,
+    "category": "Crafts",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "68+"
   },
@@ -1141,12 +1208,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 49,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "84+"
   },
@@ -1158,12 +1226,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 55,
+    "category": "Web Development",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "120+"
   },
@@ -1175,12 +1244,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 65,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "240+"
   },
@@ -1192,12 +1262,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 75,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "480+"
   },
@@ -1209,12 +1280,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 19,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -1226,12 +1298,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 25,
+    "category": "Productivity",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -1243,12 +1316,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 29,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "26+"
   },
@@ -1260,12 +1334,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 35,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "45+"
   },
@@ -1277,12 +1352,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 39,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "68+"
   },
@@ -1294,12 +1370,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 45,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "84+"
   },
@@ -1311,12 +1388,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 49,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "120+"
   },
@@ -1328,12 +1406,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 55,
+    "category": "Creative Marketing",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "240+"
   },
@@ -1345,12 +1424,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 65,
+    "category": "Music",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -1362,12 +1442,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 75,
+    "category": "Drawing & Painting",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -1379,12 +1460,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 19,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -1396,12 +1478,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 25,
+    "category": "Cooking",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "26+"
   },
@@ -1413,12 +1496,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 29,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "45+"
   },
@@ -1430,12 +1514,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 35,
+    "category": "Crafts",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "68+"
   },
@@ -1447,12 +1532,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 39,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "84+"
   },
@@ -1464,12 +1550,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 45,
+    "category": "Animation",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "120+"
   },
@@ -1481,12 +1568,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 49,
+    "category": "Cooking",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "240+"
   },
@@ -1498,12 +1586,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 55,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -1515,12 +1604,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Beginner",
     "price": 65,
+    "category": "Data Science",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -1532,12 +1622,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "Intermediate",
     "price": 75,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -1549,12 +1640,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Advanced",
     "price": 19,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "26+"
   },
@@ -1566,12 +1658,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "All Levels",
     "price": 25,
+    "category": "Digital Illustration",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "45+"
   },
@@ -1583,12 +1676,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Beginner",
     "price": 29,
+    "category": "Crafts",
     "students": [
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "68+"
   },
@@ -1600,12 +1694,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "Intermediate",
     "price": 35,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png"
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png",
+      "/images/students/student-2.png",
+      "/images/students/student-4.png"
     ],
     "studentCount": "84+"
   },
@@ -1617,12 +1712,13 @@ export const courses: Course[] = [
     "rating": 4.9,
     "level": "Advanced",
     "price": 39,
+    "category": "Photography",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-2.png",
+      "/images/students/student-4.png",
+      "/images/students/student-1.png",
+      "/images/students/student-3.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "120+"
   },
@@ -1634,12 +1730,13 @@ export const courses: Course[] = [
     "rating": 5,
     "level": "All Levels",
     "price": 45,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-3.png",
+      "/images/students/student-1.png",
+      "/images/students/student-4.png",
+      "/images/students/student-2.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "240+"
   },
@@ -1651,12 +1748,13 @@ export const courses: Course[] = [
     "rating": 4.5,
     "level": "Beginner",
     "price": 49,
+    "category": "Graphic Design",
     "students": [
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png"
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png"
     ],
     "studentCount": "480+"
   },
@@ -1668,12 +1766,13 @@ export const courses: Course[] = [
     "rating": 4.6,
     "level": "Intermediate",
     "price": 55,
+    "category": "UI/UX Design",
     "students": [
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png"
+      "/images/students/student-2.png",
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png"
     ],
     "studentCount": "1.2K+"
   },
@@ -1685,12 +1784,13 @@ export const courses: Course[] = [
     "rating": 4.7,
     "level": "Advanced",
     "price": 65,
+    "category": "Film & Video",
     "students": [
-      "/images/home/hero/student-3.png",
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png"
+      "/images/students/student-3.png",
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png"
     ],
     "studentCount": "2.5K+"
   },
@@ -1702,12 +1802,13 @@ export const courses: Course[] = [
     "rating": 4.8,
     "level": "All Levels",
     "price": 75,
+    "category": "Marketing",
     "students": [
-      "/images/home/hero/student-4.png",
-      "/images/home/hero/student-5.png",
-      "/images/home/hero/student-1.png",
-      "/images/home/hero/student-2.png",
-      "/images/home/hero/student-3.png"
+      "/images/students/student-4.png",
+      "/images/students/student-5.png",
+      "/images/students/student-1.png",
+      "/images/students/student-2.png",
+      "/images/students/student-3.png"
     ],
     "studentCount": "26+"
   }

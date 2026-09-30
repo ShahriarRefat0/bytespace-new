@@ -1,10 +1,21 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import { CourseCategoryFilter } from "./course-category-filter";
 import { CourseGrid } from "./course-grid";
-
-
-
+import { courses } from "@/data/courses";
 
 export function CoursesSection() {
+  const [activeCategory, setActiveCategory] = useState("Featured");
+
+  const displayedCourses = useMemo(() => {
+    if (activeCategory === "Featured") {
+      return courses;
+    }
+    const filtered = courses.filter((c) => c.category === activeCategory);
+    return filtered.length > 0 ? filtered : courses;
+  }, [activeCategory]);
+
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-[1240px] px-6">
@@ -24,12 +35,15 @@ export function CoursesSection() {
           </p>
         </div>
 
-<CourseCategoryFilter/>
+        {/* Categories */}
+        <CourseCategoryFilter
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+        />
 
-        {/* Course Grid */}
+        {/* 6 Courses */}
         <div className="mt-12">
-
-          <CourseGrid />
+          <CourseGrid courses={displayedCourses} limit={6} />
         </div>
       </div>
     </section>
