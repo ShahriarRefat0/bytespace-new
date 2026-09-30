@@ -4,7 +4,9 @@ import { Navbar } from "./components/layout/navbar";
 import { GridBackground } from "./components/ui/grid-background";
 import { HeroSection } from "./components/home/hero/hero-section";
 import { BrandLogosSection } from "./components/home/brand/brand-logos";
-import CareJournalPage from "./components/home/care-journal/CareJournalPage";
+import { CoursesSection } from "./components/home/courses/courses-section";
+import { LearningPathsSection } from "./components/home/learning-paths/learning-paths-section";
+import { GrowthSection } from "./components/home/GrowthFeature/growth-section";
 
 export default function Home() {
   return (
@@ -20,7 +22,9 @@ export default function Home() {
         {/* Brand Logos */}
         <BrandLogosSection />
 
-        <CareJournalPage/>
+        <CoursesSection/>
+         <LearningPathsSection />
+         <GrowthSection />
       </main>
     </div>
   );
