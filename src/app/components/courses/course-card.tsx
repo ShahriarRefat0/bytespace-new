@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BarChart3, Star } from "lucide-react";
 
 interface CourseCardProps {
+  slug?: string;
   image: string;
   title: string;
   instructor: string;
@@ -13,6 +15,7 @@ interface CourseCardProps {
 }
 
 export function CourseCard({
+  slug,
   image,
   title,
   instructor,
@@ -22,7 +25,7 @@ export function CourseCard({
   students,
   studentCount,
 }: CourseCardProps) {
-  return (
+  const cardContent = (
     <article className="group overflow-hidden rounded-[20px] border border-gray-200 bg-white transition-shadow duration-300 hover:shadow-lg">
       {/* Course Image */}
       <div className="relative mx-3 mt-3 overflow-hidden rounded-[14px]">
@@ -53,7 +56,7 @@ export function CourseCard({
       {/* Content */}
       <div className="px-4 pb-4 pt-3">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="line-clamp-1 text-[17px] font-semibold text-gray-900">
+          <h3 className="line-clamp-1 text-[17px] font-semibold text-gray-900 group-hover:text-[#1450E5] transition-colors">
             {title}
           </h3>
 
@@ -112,4 +115,14 @@ export function CourseCard({
       </div>
     </article>
   );
+
+  if (slug) {
+    return (
+      <Link href={`/course/${slug}`} className="block h-full">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return cardContent;
 }
