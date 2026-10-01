@@ -7,7 +7,7 @@ import { HeroStudentsCard } from "./hero-students-card";
 
 export function HeroVisual() {
     return (
-        <div className="relative mx-auto mt-4 h-[580px] sm:h-[620px] md:h-[660px] lg:h-[700px] w-full overflow-visible">
+        <div className="relative mx-auto mt-4 h-[580px] sm:h-[620px] md:h-[660px] lg:h-[720px] xl:h-[760px] w-full overflow-visible">
             {/* Lime Arch Background */}
             <div
                 aria-hidden="true"
@@ -112,12 +112,12 @@ export function HeroVisual() {
             </div>
 
             {/* Center Main Person */}
-            <div className="pointer-events-none absolute bottom-0 left-1/2 z-20 w-[560px] -translate-x-1/2 select-none sm:w-[460px] md:w-[540px] lg:w-[620px] xl:w-[660px]">
+            <div className="pointer-events-none absolute bottom-0 left-1/2 z-20 w-[540px] -translate-x-1/2 select-none sm:w-[580px] md:w-[700px] lg:w-[800px] xl:w-[880px] 2xl:w-[940px]">
                 <Image
                     src="/images/home/hero/hero-person.png"
                     alt="Student learning online"
-                    width={922}
-                    height={715}
+                    width={1122}
+                    height={915}
                     priority
                     className="block h-auto w-full object-contain"
                 />
