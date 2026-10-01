@@ -31,3 +31,5 @@ export interface Course {
   duration?: string;
   students?: string[];
 }
+
+

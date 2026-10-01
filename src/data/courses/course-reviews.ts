@@ -16,6 +16,7 @@ export interface CourseReview {
   createdAt: string;
 }
 
+
 export const courseReviews: CourseReview[] = [
   {
     id: 1,
