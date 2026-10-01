@@ -35,7 +35,7 @@ export function CreatorCtaDecorations() {
 
       {/* Top-right white shape */}
       <Image
-        src="/images/home/creator-cta/yellow-triangle.png"
+        src="/images/home/creator-cta/yellow-squiggle-right.png"
         alt=""
         width={220}
         height={300}
