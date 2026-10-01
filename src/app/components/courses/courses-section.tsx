@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { CourseCategoryFilter } from "./course-category-filter";
 import { CourseGrid } from "./course-grid";
-import { courses } from "@/data/courses";
+import { courses } from "@/data/courses/courses";
 
 export function CoursesSection() {
   const [activeCategory, setActiveCategory] = useState("Featured");

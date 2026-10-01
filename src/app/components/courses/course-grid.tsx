@@ -1,5 +1,5 @@
 import { CourseCard } from "./course-card";
-import { courses as defaultCourses, type Course } from "@/data/courses";
+import { courses as defaultCourses, type Course } from "@/data/courses/courses";
 
 interface CourseGridProps {
   courses?: Course[];
@@ -19,9 +19,9 @@ export function CourseGrid({
   const displayedCourses = limit
     ? courseList.slice(0, limit)
     : courseList.slice(
-        (currentPage - 1) * pageSize,
-        currentPage * pageSize,
-      );
+      (currentPage - 1) * pageSize,
+      currentPage * pageSize,
+    );
 
   return (
     <div

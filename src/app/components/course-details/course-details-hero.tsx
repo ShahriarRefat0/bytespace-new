@@ -1,5 +1,5 @@
 import { GridBackground } from "@/app/components/ui/grid-background";
-import type { Course } from "@/data/courses";
+import type { Course } from "@/data/courses/courses";
 import { Share2, Star, Users, BarChart3 } from "lucide-react";
 
 import { CoursePreview } from "./course-preview";

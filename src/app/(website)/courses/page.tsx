@@ -9,7 +9,7 @@ import { CourseCategories } from "@/app/components/courses/course-categories";
 import { CourseGrid } from "@/app/components/courses/course-grid";
 import { CoursePagination } from "@/app/components/courses/course-pagination";
 
-import { courses } from "@/data/courses";
+import { courses } from "@/data/courses/courses";
 
 export default function CoursesPage() {
   const [currentPage, setCurrentPage] = useState(1);

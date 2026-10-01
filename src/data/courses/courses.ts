@@ -13,22 +13,21 @@ export interface Course {
 
 export const courses: Course[] = [
   {
-    "id": 1,
-    "image": "/images/home/courses/course-1.png",
-    "title": "Learn Figma from Basic",
-    "instructor": "purepearl studio",
-    "rating": 4.5,
-    "level": "Beginner",
-    "price": 25,
-    "category": "Crafts",
-    "students": [
-      "/images/students/student-1.png",
-      "/images/students/student-2.png",
-      "/images/students/student-3.png",
-      "/images/students/student-4.png",
-      "/images/students/student-5.png"
-    ],
-    "studentCount": "26+"
+    id: 1,
+    slug: "learn-figma-from-basic",
+    title: "Learn Figma from Basic",
+    image: "/images/home/courses/course-1.png",
+
+    creatorId: "creator-001",
+
+    category: "Crafts",
+    level: "Beginner",
+
+    rating: 4.5,
+    reviewCount: 26,
+    studentCount: 26,
+
+    price: 25,
   },
   {
     "id": 2,

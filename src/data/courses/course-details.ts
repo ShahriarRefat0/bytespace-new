@@ -1,21 +1,7 @@
-export interface CourseLesson {
-  id: number;
-  title: string;
-  duration: string;
-}
-
 export interface CourseDetail {
-  slug: string;
+  courseId: number;
+
   subtitle: string;
-  reviewCount: number;
-
-  lessonCount: number;
-  duration: string;
-
-  instructorAvatar: string;
-  instructorBio: string;
-
-  lessons: CourseLesson[];
 
   description: string[];
 
@@ -28,46 +14,17 @@ export interface CourseDetail {
 
 export const courseDetails: CourseDetail[] = [
   {
-    slug: "build-digital-asset-comprehensive-guide",
+    courseId: 1,
 
     subtitle:
       "Unlock the Power of Digital Creation with Expert Guidance",
-
-    reviewCount: 172,
-
-    lessonCount: 112,
-    duration: "24 hours",
-
-    instructorAvatar:
-      "/instructors/purepearl.png",
-
-    instructorBio:
-      "PurePearl Studio is a professional creative team focused on digital design and creative production.",
-
-    lessons: [
-      {
-        id: 1,
-        title: "Introduction to Digital Assets",
-        duration: "12 mins",
-      },
-      {
-        id: 2,
-        title: "Design Principles for Impact",
-        duration: "21 mins",
-      },
-      {
-        id: 3,
-        title: "Advanced Techniques in Digital Creation",
-        duration: "16 mins",
-      },
-    ],
 
     description: [
       "Embark on an enlightening exploration into the world of digital creation with our comprehensive course.",
 
       "Build Digital Assets: A Comprehensive Guide provides a transformative learning experience that takes you from foundational concepts to advanced techniques.",
 
-      "As you progress through the course, you will gain practical knowledge and develop the skills required to create professional digital assets.",
+      "As you progress through the course, you'll ascend to higher levels of expertise, delving into the nuances of design principles that drive impactful creations.",
     ],
 
     previewImages: [

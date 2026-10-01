@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Check, Clock, PlayCircle } from "lucide-react";
-import type { Course } from "@/data/courses";
+import type { Course } from "@/data/courses/courses";
 
 interface CourseSidebarProps {
   course: Course;

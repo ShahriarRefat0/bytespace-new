@@ -1,19 +1,16 @@
 import { notFound } from "next/navigation";
 
-import { courses } from "@/data/courses";
-
-import { CourseDetailsHero } from "@/app/components/course-details/course-details-hero";
-import { CourseDetailsContent } from "@/app/components/course-details/course-details-content";
-
-interface CourseDetailsPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
-}
+import { courses } from "@/data/courses/courses";
+import { courseDetails } from "@/data/courses/course-details";
+import { courseLessons } from "@/data/courses/course-lessons";
+import { courseReviews } from "@/data/courses/course-reviews";
+import { instructors } from "@/data/courses/instructors";
 
 export default async function CourseDetailsPage({
   params,
-}: CourseDetailsPageProps) {
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const course = courses.find(
@@ -24,11 +21,35 @@ export default async function CourseDetailsPage({
     notFound();
   }
 
-  return (
-    <main className="min-h-screen bg-white">
-      <CourseDetailsHero course={course} />
+  const details = courseDetails.find(
+    (detail) => detail.courseId === course.id,
+  );
 
-      <CourseDetailsContent course={course} />
-    </main>
+  const lessons = courseLessons
+    .filter((lesson) => lesson.courseId === course.id)
+    .sort((a, b) => a.order - b.order);
+
+  const reviews = courseReviews.filter(
+    (review) => review.courseId === course.id,
+  );
+
+  const instructor = instructors.find(
+    (instructor) =>
+      instructor.id === course.instructorId,
+  );
+
+  const courseData = {
+    ...course,
+    ...details,
+    lessons,
+    reviews,
+    instructor,
+  };
+
+  return (
+    <>
+      {/* Hero */}
+      {/* About / Lessons / Reviews */}
+    </>
   );
 }

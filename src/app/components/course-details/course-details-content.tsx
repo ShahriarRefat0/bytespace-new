@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Course } from "@/data/courses";
+import type { Course } from "@/data/courses/courses";
 
 import { CourseTabs } from "./course-tabs";
 import { CourseDescription } from "./course-description";

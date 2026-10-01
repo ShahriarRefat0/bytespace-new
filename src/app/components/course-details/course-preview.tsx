@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Play } from "lucide-react";
-import type { Course } from "@/data/courses";
+import type { Course } from "@/data/courses/courses";
 
 interface CoursePreviewProps {
   course: Course;

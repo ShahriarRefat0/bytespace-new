@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Course } from "@/data/courses";
+import type { Course } from "@/data/courses/courses";
 
 interface CourseInstructorProps {
   course: Course;
