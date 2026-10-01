@@ -1,12 +1,32 @@
+import { GlowLight } from "../ui/glow-light";
 import { CreatorVisual } from "./creator-visual";
 import { GrowthFeature } from "./growth-feature";
 import { GrowthVisual } from "./growth-visual";
 
 export function GrowthSection() {
   return (
-    <section className="overflow-hidden bg-white">
-      
-      <div className="mx-auto max-w-[1240px] px-6">
+    <section className="relative overflow-hidden bg-white">
+      {/* Background ambient glows */}
+      <GlowLight
+        variant="yellow"
+        size={700}
+        opacity={0.3}
+        className="-right-60 top-10"
+      />
+      <GlowLight
+        variant="blue"
+        size={600}
+        opacity={0.18}
+        className="-left-60 top-1/3"
+      />
+      <GlowLight
+        variant="yellow"
+        size={650}
+        opacity={0.25}
+        className="-left-60 bottom-10"
+      />
+
+      <div className="relative z-10 mx-auto max-w-[1240px] px-6">
         {/* FEATURE 01*/}
         <GrowthFeature
           title={

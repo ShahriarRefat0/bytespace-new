@@ -1,11 +1,19 @@
 import Image from "next/image";
-
+import { GlowLight } from "../ui/glow-light";
 import { HappyStudentsCard } from "./happy-students-card";
 import { RevenueCard } from "./revenue-card";
 
 export function CreatorVisual() {
   return (
     <div className="relative mx-auto h-[540px] w-full max-w-[600px]">
+      {/* Ambient glow behind creator visual */}
+      <GlowLight
+        variant="yellow"
+        size={460}
+        opacity={0.35}
+        className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+      />
+
       {/* Revenue cards */}
       <RevenueCard type="revenue" />
       <RevenueCard type="year" />
@@ -21,7 +29,7 @@ export function CreatorVisual() {
 
       {/* Yellow decoration */}
       <Image
-        src="/images/home/growth/yellow-squiggle-left.png"
+        src="/images/home/growth/yellow-squiggle.png"
         alt=""
         width={110}
         height={160}

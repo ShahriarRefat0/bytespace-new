@@ -42,7 +42,7 @@ export function HeroVisual() {
             {/* 2. Mid-Left White Squiggle */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute left-[90px] top-[195px] z-20 hidden w-[85px] rotate-[35deg] select-none md:block md:left-[130px] lg:left-[180px] lg:w-[105px]"
+                className="pointer-events-none absolute left-[190px] top-[195px] z-20 hidden w-[185px] rotate-[35deg] select-none md:block md:left-[130px] lg:left-[180px] lg:w-[300px]"
             >
                 <Image
                     src="/images/home/hero/white-right.png"
@@ -86,13 +86,13 @@ export function HeroVisual() {
             {/* 5. Mid-Right White Pyramid */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute right-[95px] top-[185px] z-20 hidden w-[100px] select-none md:block md:right-[130px] lg:right-[180px] lg:w-[125px]"
+                className="pointer-events-none absolute right-[95px] top-[155px] z-20 hidden w-[300px] select-none md:block md:right-[180px] lg:right-[200px] lg:w-[225px]"
             >
                 <Image
                     src="/images/home/hero/mask-group.png"
                     alt=""
-                    width={189}
-                    height={189}
+                    width={389}
+                    height={389}
                     className="h-auto w-full object-contain"
                 />
             </div>
@@ -100,13 +100,13 @@ export function HeroVisual() {
             {/* 6. Bottom-Right White Squiggle */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute right-0 bottom-[25px] z-20 hidden w-[120px] -rotate-[35deg] select-none md:block lg:right-3 lg:w-[155px]"
+                className="pointer-events-none absolute right-10 bottom-[45px] z-20 hidden w-[320px] -rotate-[35deg] select-none md:block lg:right-20 lg:w-[300px]"
             >
                 <Image
                     src="/images/home/hero/white-right.png"
                     alt=""
-                    width={317}
-                    height={332}
+                    width={617}
+                    height={632}
                     className="h-auto w-full object-contain"
                 />
             </div>
