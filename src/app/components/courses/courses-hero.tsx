@@ -3,7 +3,7 @@ import { Search, ChevronDown } from "lucide-react";
 export function CoursesHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto flex min-h-[300px] max-w-[1240px] flex-col items-center justify-center px-6 py-16 text-center">
+      <div className="mx-auto mt-10 flex min-h-[300px] max-w-[1240px] flex-col items-center justify-center px-6 py-16 text-center">
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl">
           Find Your Next Course
         </h1>

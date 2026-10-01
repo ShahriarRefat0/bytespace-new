@@ -47,9 +47,10 @@ export default async function CourseDetailsPage({
   return (
     <>
     <CourseDetailsHero
-      course={course}
-      details={details}
-      creator={creator}
+    course={course}
+  details={details}
+  lessons={lessons}
+  creator={creator}
     />
 
     <section className="bg-white">

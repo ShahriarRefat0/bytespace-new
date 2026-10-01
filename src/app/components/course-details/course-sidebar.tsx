@@ -11,6 +11,7 @@ import type { Course } from "@/data/courses/courses";
 import type { CourseDetail } from "@/data/courses/course-details";
 import type { CourseLesson } from "@/data/courses/course-lessons";
 import type { Creator } from "@/app/types/creator";
+import Link from "next/link";
 
 interface CourseSidebarProps {
   course: Course;
@@ -169,18 +170,17 @@ export function CourseSidebar({
             </div>
 
             {/* Creator Bio */}
-            <p className="mt-5 text-xs leading-5 text-gray-500">
+            <p className="mt-5 mb-5  text-xs leading-5 text-gray-500">
               Ready to Dive In? Enroll Now and Start
               Building Your Digital Future!
             </p>
 
             {/* Profile */}
-            <button
-              type="button"
-              className="mt-4 cursor-pointer rounded-full border border-gray-200 px-4 py-2 text-xs font-medium text-gray-600 transition hover:bg-gray-50"
-            >
+            <Link
+              className="cursor-pointer rounded-full border border-gray-200 px-4 py-2 text-xs font-medium text-gray-600 transition hover:bg-gray-50"
+              href={`/creators/${creator.slug}`}>
               See Full Profile
-            </button>
+            </Link>
           </div>
         )}
       </div>

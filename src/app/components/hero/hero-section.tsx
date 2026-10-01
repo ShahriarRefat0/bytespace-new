@@ -5,7 +5,7 @@ import { HeroVisual } from "./hero-visual";
 
 export function HeroSection() {
     return (
-        <section className="relative min-h-[850px] overflow-hidden pt-20">
+        <section className="relative mt-15 min-h-[850px] overflow-hidden pt-20">
             <div className="w-full">
                 {/* Hero Heading */}
                 <div className="relative z-20 mx-auto max-w-[1000px] text-center">
