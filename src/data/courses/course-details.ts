@@ -1,14 +1,10 @@
 export interface CourseDetail {
   courseId: number;
-
   subtitle: string;
-
+  duration: string;
   description: string[];
-
   previewImages: string[];
-
   keyPoints: string[];
-
   includes: string[];
 }
 
@@ -18,6 +14,7 @@ export const courseDetails: CourseDetail[] = [
 
     subtitle:
       "Unlock the Power of Digital Creation with Expert Guidance",
+    duration: "24 hours",
 
     description: [
       "Embark on an enlightening exploration into the world of digital creation with our comprehensive course.",
@@ -27,11 +24,12 @@ export const courseDetails: CourseDetail[] = [
       "As you progress through the course, you'll ascend to higher levels of expertise, delving into the nuances of design principles that drive impactful creations.",
     ],
 
+
     previewImages: [
-      "/courses/previews/course-1-1.webp",
-      "/courses/previews/course-1-2.webp",
-      "/courses/previews/course-1-3.webp",
-      "/courses/previews/course-1-4.webp",
+      "/images/Sneak/spack1.png",
+      "/images/Sneak/spack2.png",
+      "/images/Sneak/spack3.png",
+      "/images/Sneak/spack4.png",
     ],
 
     keyPoints: [

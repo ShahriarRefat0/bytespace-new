@@ -1,48 +1,41 @@
-import Image from "next/image";
-import type { Course } from "@/data/courses/courses";
+import type { Creator } from "@/app/types/creator";
 
 interface CourseInstructorProps {
-  course: Course;
+  creator?: Creator;
 }
 
 export function CourseInstructor({
-  course,
+  creator,
 }: CourseInstructorProps) {
+  if (!creator) {
+    return null;
+  }
+
   return (
-    <section className="mt-10 border-t border-gray-100 pt-8">
-      <h2 className="text-lg font-bold text-gray-900">
-        Your Instructor
+    <section className="mt-12">
+      <h2 className="text-xl font-bold text-gray-900">
+        About the Instructor
       </h2>
 
       <div className="mt-5 flex items-start gap-4">
-        {course.instructorAvatar ? (
-          <Image
-            src={course.instructorAvatar}
-            alt={course.instructor}
-            width={64}
-            height={64}
-            className="h-16 w-16 rounded-full object-cover"
-          />
-        ) : (
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gray-100 text-lg font-semibold text-gray-500">
-            {course.instructor.charAt(0)}
-          </div>
-        )}
+        <img
+          src={creator.avatar}
+          alt={creator.name}
+          className="h-16 w-16 rounded-full object-cover"
+        />
 
         <div>
           <h3 className="font-semibold text-gray-900">
-            {course.instructor}
+            {creator.name}
           </h3>
 
-          <p className="mt-1 text-xs text-gray-400">
-            Professional Creator
+          <p className="mt-1 text-sm text-gray-500">
+            {creator.role}
           </p>
 
-          {course.instructorBio && (
-            <p className="mt-3 text-sm leading-6 text-gray-500">
-              {course.instructorBio}
-            </p>
-          )}
+          <p className="mt-3 text-sm leading-6 text-gray-500">
+            {creator.bio}
+          </p>
         </div>
       </div>
     </section>
